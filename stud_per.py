@@ -36,14 +36,14 @@ def predict_data(data):
     return round(prediction[0],2)
 
 def main():
-    st.title("Student performance prediction")
-    st.write("enter you detail to get prediction on your input")
+    st.title("Student Performance Prediction")
+    st.write("Enter you detail to get prediction on your input")
     
-    hour_studied = st.number_input("Hours studied", min_value = 1, max_value = 10,value = 5 )
+    hour_studied = st.number_input("Hours Studied", min_value = 1, max_value = 10,value = 5 )
     Previous_Score = st.number_input("Previous Score", min_value= 40, max_value= 100, value= 70)
     Extracurricular_Activities = st.selectbox("Extracurricular Activities", ["Yes", "No"])
     Sleep_Hours = st.number_input("Sleep Hours", min_value= 4, max_value= 10, value= 7)
-    Question_Papers = st.number_input("Number of Question Papers solved", min_value= 0, max_value= 10, value= 5)
+    Question_Papers = st.number_input("Number of Question Papers Solved", min_value= 0, max_value= 10, value= 5)
     
     if st.button("predict_your_score"):
         user_data = {
